@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import Section from './Section'
 
 function Home() {
+
+
   return (
     <Container>
     <Section 
-        title="Model S"
+        title="Model 3"
         description= "Order Online for Touchless Delivery"
-        backgroundImg="model-s.jpg"
+        backgroundImg="model-3.jpg"
         leftBtn="Custom order"
         rightBtn= "Existing Iventory"
 
@@ -21,9 +23,9 @@ function Home() {
         rightBtn= "Existing Iventory"
     />
     <Section 
-        title="Model 3"
+        title="Model S"
         description= "Order Online for Touchless Delivery"
-        backgroundImg="model-3.jpg"
+        backgroundImg="model-s.jpg"
         leftBtn="Custom order"
         rightBtn= "Existing Iventory"
     />

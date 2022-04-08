@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
 function Section({title, description, leftBtn, rightBtn, backgroundImg}) {
+
+    function handleArrowClick(e){
+
+    }
   return (
     <Wrap bgImage={backgroundImg}>
     <Fade bottom>
@@ -23,7 +27,7 @@ function Section({title, description, leftBtn, rightBtn, backgroundImg}) {
             </RightButton>       
             }
         </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg" />
+        <DownArrow src="/images/down-arrow.svg" href="" onClick={handleArrowClick} />
         </Fade>
         </Buttons>
     </Wrap>
@@ -50,7 +54,11 @@ background-image: ${props => `url("/images/${props.bgImage}")`}
 const ItemText =styled.div`
 padding-top: 15vh;
 text-align: center;
+line-height:1.5;
 z-index: -1;
+h1{
+    font-size: 40px;
+}
 `
 const ButtonGroup = styled.div`
 display:flex;
@@ -86,7 +94,7 @@ const DownArrow = styled.img`
 height: 40px;
 overflow-x: hidden;
 animation: animateDown infinite 1.5s;
-
+cursor: pointer;
 `
 
 const Buttons = styled.div`
